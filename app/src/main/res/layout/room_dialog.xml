@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background_round"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#eeeeee"
+        android:background="@drawable/background_round">
+
+        <LinearLayout
+            android:id="@+id/room_dialog_sectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_round"
+            android:backgroundTint="#C9C9C9">
+
+            <TextView
+                android:id="@+id/room_dialog_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Section:" />
+
+            <TextView
+                android:id="@+id/room_dialog_section_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/room_dialog_section"
+                android:text="A701" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/room_dialog_professorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_dialog_sectionLayout"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_round"
+            android:backgroundTint="#C9C9C9">
+
+            <TextView
+                android:id="@+id/room_dialog_professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Professor:" />
+
+            <TextView
+                android:id="@+id/room_dialog_professor_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/room_dialog_section"
+                android:text="Placeholder" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/room_dialog_timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_dialog_professorLayout"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_round"
+            android:backgroundTint="#C9C9C9">
+
+            <TextView
+                android:id="@+id/room_dialog_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Time:" />
+
+            <TextView
+                android:id="@+id/room_dialog_time_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@id/room_dialog_section"
+                android:text="10:30 AM - 12:30 PM" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/room_dialog_timeLayout"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_round"
+            android:backgroundTint="#c9c9c9">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/room_dialog_btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/nav_occupied_room_icon_red"
+                android:text="Occupy"
+                android:textColor="@color/black"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/room_dialog_btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_dialog_btn_1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/nav_problem_icon_blue"
+                android:text="Occupy With Technical Problems"
+                android:textColor="@color/black"
+                app:cornerRadius="20dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

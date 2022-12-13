@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/nav_settings_icon"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/nav_about_icon"
+        android:title="About" />
+    <item
+        android:id="@+id/nav_faqs"
+        android:icon="@drawable/nav_faqs_icon"
+        android:title="FAQs" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/nav_logout_icon"
+        android:title="Logout" />
+
+</menu>
